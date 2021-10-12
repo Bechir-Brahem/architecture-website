@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/stylesheets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<nav id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+<!--<span onclick="openNav()">open</span>-->
+<div class="navbar" style="color: white" onclick="openNav()"><img  class="hamburger" src="/static/images/menu.png"></div>
+
+<header>
+    <div id="landing-building">
+        <div class="landing-overlay">
+            <div class="top-section"></div>
+            <div class="mid-section flex-center" style="flex-wrap: wrap">
+
+                <div>
+                    <div style="width: 100vw">
+                        <p class="gold-text">main function of the company</p>
+                    </div>
+                    <div>
+                        <h1 class="title-text">Here lays the slogan</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<section style="height: 70vh">
+    <div class="container" style="display: flex;">
+        <div class="left-part">
+            <p class="gold-text" style="text-align: left">what makes us different</p>
+            <h1 class="title-text-sm">Providing Unique & Priceless Experience</h1>
+            <hr style="width: 25%;color: #E3AE7E;margin: 0;margin-top: 20px">
+            <p class="normal-text" style="margin-top: 30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi at corporis
+                doloremque ducimus, eligendi
+                harum illo illum maiores quasi qui tenetur veritatis. Adipisci illum nesciunt odio officia, optio soluta
+                ullam.</p>
+        </div>
+        <div class="right-part flex-center">
+            <img src="/static/images/monguela.jpg" class="clock" alt="clock">
+        </div>
+
+    </div>
+
+
+</section>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</body>
+</html>
