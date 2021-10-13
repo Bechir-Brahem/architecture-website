@@ -84,7 +84,7 @@ header .bottom-section {
     height: 0;
 }
 
-section .container {
+section .container-mid {
     padding: 10%;
 }
 
@@ -205,7 +205,72 @@ body {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
-.hamburger{
+
+.hamburger {
     height: 50px;
 }
 
+.side-block {
+    display: flex;
+    justify-content: space-between;
+    /*padding-top: %;*/
+    padding-bottom: 10%;
+
+}
+
+.side-text {
+    padding-left: 50px;
+    padding-top: 8%;
+
+}
+
+.side-block h1 {
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.services-title {
+
+    font-family: Playfair Display SC, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* identical to box height, or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
+.service .top-text {
+    text-align: center;
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: white;
+
+}
+
+.service .more-text {
+    text-align: left;
+    padding-left: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: white;
+
+}
