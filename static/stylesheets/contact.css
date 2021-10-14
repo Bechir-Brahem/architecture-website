@@ -1,40 +1,16 @@
 body {
-    background-color: #05151B;
+
 }
 
 p, h1, body {
     margin: 0;
+
+}
+p, h1{
+    padding: 10px;
 }
 
-header {
-    background-image: url("/static/images/clouds2_270.webp");
-    /*background-image: url("/static/images/clouds2.mp4");*/
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    height: 100vh;
-    width: 100vw;
-}
 
-#landing-building {
-    width: 100%;
-    height: 100%;
-    /*background-image:linear-gradient(rgba(5, 21, 27, 0),rgba(5, 21, 27, 1)) ,url("/static/images/building.webp");*/
-    background-image: url("/static/images/building.webp");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-}
-
-header .landing-overlay {
-    /*position: fixed; !* Sit on top of the page content *!*/
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(rgba(5, 21, 27, 0), rgba(5, 21, 27, 1)); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-}
 
 .flex-center {
     display: flex;
@@ -67,17 +43,7 @@ header .landing-overlay {
 
 }
 
-header .top-section {
-    height: 5vh;
-}
 
-header .mid-section {
-    height: 60vh;
-}
-
-header .bottom-section {
-    height: 35vh;
-}
 
 .break {
     flex-basis: 100%;
