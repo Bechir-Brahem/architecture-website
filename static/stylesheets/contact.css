@@ -254,6 +254,10 @@ input{
 .form-group{
     margin-top: 15%;
 }
+.form-control:focus, textarea:focus{
+    border-color: rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 0.25rem rgba(0,0,0,0.2);
+}
 .submit{
     background-color: #E3AE7E;
     border-radius: 20px;
