@@ -206,9 +206,11 @@ body {
     width: 100%; /* Full width */
 }
 
+
 .hamburger {
     height: 50px;
-    padding: 6px;
+    padding: 3px;
+    margin-left: 10px;
 }
 
 .side-block {

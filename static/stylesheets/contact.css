@@ -1,5 +1,5 @@
 body {
-
+    overflow-x: hidden;
 }
 
 p, h1, body {
@@ -8,8 +8,14 @@ p, h1, body {
 }
 p, h1{
     padding: 10px;
+    word-wrap: break-word;
 }
 
+.transparent-input {
+    background-color: transparent !important;
+    border-radius: 20px;
+    border-color: #E3AE7E;
+}
 
 
 .flex-center {
@@ -17,7 +23,10 @@ p, h1{
     justify-content: center;
     align-items: center;
 }
-
+hr{
+    width: 80%;
+   margin: auto;
+}
 .gold-text {
     font-family: Roboto, sans-serif;
     font-size: 12px;
@@ -93,9 +102,6 @@ section .right-part {
 
 }
 
-body {
-    overflow-x: hidden;
-}
 
 
 .clock {
@@ -174,7 +180,8 @@ body {
 
 .hamburger {
     height: 50px;
-    padding: 6px;
+    padding: 3px;
+    margin-left: 10px;
 }
 
 .side-block {
@@ -240,4 +247,21 @@ body {
     letter-spacing: 0em;
     color: white;
 
+}
+input{
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-top: 15%;
+}
+.submit{
+    background-color: #E3AE7E;
+    border-radius: 20px;
+    border-color: #E3AE7E;
+    width: 20%;
+    margin: 5% 0 0 0;
+}
+textarea::placeholder{
+    text-align: left;
+    padding: 1% 0 0 2%;
 }

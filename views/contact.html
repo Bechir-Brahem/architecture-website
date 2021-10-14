@@ -32,28 +32,59 @@
 
 <div class="navbar" style="background-color: #05151B;" onclick="openNav()"><img class="hamburger" src="/static/images/hamburger.png"></div>
 
-<section style="height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
+<section style="height: 105vh;background-color: #EFEBE6;padding-top: 20vh;">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <h1 class="title-text-sm" style="color: #05151B;">Contact Us</h1>
-                <p>We have a talented team honored to work with you. Have an idea? Just let us know, and we’ll get started.
-                </p><br><br>
-                <p>
-                    To find out more about what we can do for you, request more examples of our work, or arrange a meeting, please don’t hesitate to get in touch.
-                </p><br><br>
-                <p>Call, text +21698622126, or fill out the form on the right.</p>
-            </div>
-            <div class="col-2">
-                <form action="post">
+        <div class="col">
+            <h1 class="title-text-sm" style="color: #05151B;">Contact Us</h1>
+            <p>We have a talented team honored to work with you. Have an idea? Just let us know, and we’ll get started.
+            </p><br><br>
+            <p>
+                To find out more about what we can do for you, request more examples of our work, or arrange a meeting, please don’t hesitate to get in touch.
+            </p><br><br>
+            <p>Call, text +21698622126, or fill out the form on the right.</p>
+        </div>
 
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control transparent-input" id="name" aria-describedby="emailHelp" placeholder="Name">
+
+                        <input type="email" class="form-control transparent-input" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control transparent-input" id="phone" aria-describedby="emailHelp" placeholder="Phone">
+                        <textarea name="message" id="message" cols="85" rows="10" class="transparent-input" placeholder="Your message"></textarea>
+                        <input type="submit" class="btn submit" value="Submit">
+                    </div>
                 </form>
             </div>
-        </div>
+
     </div>
+    </div>
+
 </section>
+<section>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="562" id="gmap_canvas" src="https://maps.google.com/maps?q=Cit%C3%A9%20Olympique,%20Tunis&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://soap2day-to.com"></a><br><style>.mapouter{position:relative;text-align:right;height:562px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedding google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:562px;width:100%;}</style></div></div>
+</section>
+<footer style="height: 15vh; background-color: #EFEBE6 ">
+    <br><br><hr>
+<div class="row">
+    <div class="col">
+        <div  class="gold-text" style="color: black; margin-top: 2px">All rights reserved</div>
+    </div>
+    <div class="col">
+        <div class="gold-text" style="color: black; margin-top: 2px">© Copyright 2021 Company Name</div>
+
+    </div>
+    <div class="col">
+        <div class="gold-text" style="color: black; margin-top: 2px">Produced by Company Name</div>
+
+    </div>
 
 
+</div>
+
+
+</footer>
 <script>
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
