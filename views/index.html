@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
           rel="stylesheet">
-
+    <link rel="stylesheet" href="/static/stylesheets/splide.min.css">
 </head>
 <body>
 
@@ -51,7 +51,7 @@
 
     </div>
 </header>
-<section style="height: 100vh">
+<section style="min-height: 100vh">
     <div class="container-mid" style="display: flex;">
         <div class="left-part">
             <p class="gold-text" style="text-align: left">what makes us different</p>
@@ -71,7 +71,7 @@
 
 
 </section>
-<section style="height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
+<section style="min-height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -121,14 +121,14 @@
     </div>
 
 </section>
-<section style="height: 100vh;padding: 5% 0 ">
+<section style="min-height: 100vh;padding: 5% 0 ">
     <div class="container">
         <div class="mb-5">
             <p class="gold-text">our services</p>
             <h1 class="services-title">Providing excellence</h1>
 
         </div>
-        <div class="row" >
+        <div class="row">
             <div class="col-5 service mt-5">
                 <div class="flex-center">
                     <img src="/static/images/diamond.png" alt="diamond">
@@ -170,16 +170,99 @@
 
 
 </section>
+<section style="min-height: 100vh;background-color: #EFEBE6">
 
+</section>
+<section style="min-height: 100vh;background-color: #05151B;padding-top: 10vh">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col why-hatem">
+                <p class="gold-text">why HATEM Souguir LTD</p>
+                <h1 class="title-text-sm2 mt-2">What makes us Different</h1>
+                <p class="more-text mt-2" style="color: white"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Ad
+                    adipisci aperiam consectetur, dolorem,
+                    doloremque eos ex, fuga illum itaque nam nesciunt nisi quod repellendus reprehenderit sint voluptas
+                    voluptatum. Asperiores, excepturi.</p>
+                <p class="more-text mt-2" style="color: white">Vivamus a metus magna. Integer sed erat ac sem varius
+                    tempus
+                    sit amet a enim. Sed pellentesque viverra felis, eget ultricies ex consectetur et. Nulla sapien
+                    ligula, pellentesque quis vehicula et, auctor et tellus. Cras molestie id lacus a lacinia. Nunc ac
+                    tempus nibh.</p>
+
+            </div>
+        </div>
+        <div class="mt-5"></div>
+        <div class="row">
+            <div class="col-4 img1 hatem-image"></div>
+            <div class="col-4 img2 hatem-image"></div>
+            <div class="col-4 img3 hatem-image"></div>
+        </div>
+    </div>
+
+</section>
+<section style="min-height: 100vh;background-color: #EFEBE6">
+
+    <div class="" style="padding :10vh">
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="/static/images/project1.webp">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/static/images/project3.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/static/images/project2.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex pt-4" style="width: 100%;justify-content: flex-end">
+            <div class="flex-center next-button" onclick="slidePrev()">
+                <div class="next-text">prev</div>
+            </div>
+            <div class="flex-center next-button" onclick="slideNext()">
+                <div class="next-text">next</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="/static/javascript/splide.min.js"></script>
 <script>
+    function slideNext() {
+        let a = splide.Components.Controller;
+        let cur = a.getIndex() + 1;
+        let mod = a.getEnd() + 1;
+        a.go(cur % mod)
+    }
+
+    function slidePrev() {
+        let a = splide.Components.Controller;
+        let mod = a.getEnd() + 1;
+        let cur = a.getIndex() - 1 + mod;
+        a.go(cur % mod)
+    }
+
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
     }
 
-    /* Close when someone clicks on the "x" symbol inside the overlay */
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        splide = new Splide('#image-slider', {
+            cover: true,
+            heightRatio: 0.5,
+            type: "loop",
+            // arrows: null
+        }).mount();
+    });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
