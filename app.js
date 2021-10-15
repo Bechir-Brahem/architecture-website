@@ -12,5 +12,8 @@ app.get('/', (req, res) => {
 app.get('/contact', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'views', 'contact.html'));
 });
+app.get('/casestudy', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'views', 'case-study.html'));
+});
 
 module.exports = app;
