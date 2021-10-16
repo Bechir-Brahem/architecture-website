@@ -61,10 +61,10 @@ margin:0;
     }
 }
 
-.navbar {
+.navigation{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+     /* Full width */
 }
 
 
@@ -75,11 +75,13 @@ margin:0;
 }
 
 .main{
-    min-heightheight: 150vh;
+    min-height: 200vh;
     background : linear-gradient(0deg, #EFEBE6 70%, #05151B 30%);
 }
 img{
-    margin : 10%;
+    margin : 10% 10% 5% 10%;
+    width: 70% ;
+    height: 30%;
 }
 .title{
     /* Premuim Residence */
@@ -95,4 +97,102 @@ img{
     text-align: center;
 
     color: #FFFFFF;
+}
+.row{
+    margin: 0 1px 0 10px;
+}
+.gold-text {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1.7066999673843384px;
+    text-align: center;
+    color: #E3AE7E;
+    text-transform: uppercase;
+padding: 10px 30px 10px 30px;
+}
+
+
+.normal-text {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod aliqua. */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+padding: 10px 30px 10px 30px;
+    color: #05151B !important;
+
+
+}
+.col-4{
+    text-align: center !important;
+
+}
+.span1{
+    width: 30%;
+
+}
+.span1 .normal-text,.gold-text{
+    text-align: left !important;
+}
+.span2{
+    width: 70%;
+}
+.span2 .normal-text{
+    padding-right: 120px;
+}
+.container{
+    display: flex;
+    margin: 0 20%  0 20% !important;
+}
+.buttonVisit{
+    background-color: transparent;
+    border: #E3AE7E 2px solid;
+    border-radius: 30px;
+    box-shadow: none;
+    padding: 10px;
+    width: 15%;
+    transition: background-color 150ms ease-in-out;
+
+}
+.bouton{
+    text-align: center;
+}
+.buttonVisit:hover{
+    background-color: #0d2c38 !important;
+    border-color: #0d2c38;
+    color: white;
+}
+hr{
+    width: 80%;
+    margin: 6% 6% 3% 6% !important;
+}
+.footer{
+    padding: 0 50px 50px 50px;
+}
+svg{
+    margin: 0 15px 0;
+}
+.prvnxt{
+
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    /* identical to box height, or 179% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #05151B;
+
+
 }
