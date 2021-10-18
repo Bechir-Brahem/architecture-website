@@ -31,60 +31,106 @@
 
 </nav>
 
-<div class="navbar" style="background-color: #05151B;" onclick="openNav()"><img class="hamburger" src="/static/images/hamburger.png"></div>
+<div class="navbar" style="background-color: #05151B;" onclick="openNav()"><img class="hamburger"
+                                                                                src="/static/images/hamburger.png">
+</div>
 
-<section style="height: 105vh;background-color: #EFEBE6;padding-top: 20vh;">
+<section style="background-color: #EFEBE6;padding: 20vh 0;">
     <div class="container">
         <div class="row">
-        <div class="col">
-            <h1 class="title-text-sm" style="color: #05151B;">Contact Us</h1>
-            <p>We have a talented team honored to work with you. Have an idea? Just let us know, and we’ll get started.
-            </p><br><br>
-            <p>
-                To find out more about what we can do for you, request more examples of our work, or arrange a meeting, please don’t hesitate to get in touch.
-            </p><br><br>
-            <p>Call, text +21698622126, or fill out the form on the right.</p>
-        </div>
+            <h1 class="title-text-sm mb-5 pb-2" style="color: #05151B;">Contact Us</h1>
+            <div class="col-12 col-md-4 p-0">
+                <p class="more-text pb-5"> We have a talented team honored to work with you. Have an idea? Just let us
+                    know,
+                    and we’ll get
+                    started.
+                </p>
+                <p class="more-text pb-5">
+                    To find out more about what we can do for you, request more examples of our work, or arrange a
+                    meeting, please don’t hesitate to get in touch.
+                </p>
+                <p class="more-text">Call, text +21698622126, or fill out the form on the right.</p>
+            </div>
+            <div class="col-1 d-none d-md-flex"></div>
 
-            <div class="col">
-                <div class="social-container">
-                    <div class="social-icons">
-                        <div><a href="#"><i class="fa fa-instagram"></i></a></div>
-                        <div><a href="#"><i class="fa fa-twitter"></i></a></div>
-                        <div><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                        <div><a href="#"><i class="fa fa-codepen"></i></a></div>
-                    </div>
+            <div class="col-12 col-md-7 mt-lg-0 mt-5 ">
+                <div class="mb-3">
+                    <input id="name" type="text" class="form-control in" placeholder="NAME">
+                </div>
+                <div class="mb-3">
+                    <input id="subject" type="text" class="form-control in" placeholder="SUBJECT">
+                </div>
+                <div class="mb-3">
+                    <input id="phone" type="number" class="form-control in" placeholder="PHONE">
+                </div>
+                <div class="mb-3">
+                    <textarea id="message" class="form-control " placeholder="YOUR MESSAGE" rows="3"></textarea>
+                </div>
+
+                <div class="pt-5"><span onclick="sendMail()" class="bouton flex-center">SUBMIT</span></div>
 
             </div>
-
-    </div>
+        </div>
     </div>
 
 </section>
-<section>
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="562" id="gmap_canvas" src="https://maps.google.com/maps?q=Cit%C3%A9%20Olympique,%20Tunis&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://soap2day-to.com"></a><br><style>.mapouter{position:relative;text-align:right;height:562px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedding google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:562px;width:100%;}</style></div></div>
+<section class="">
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="100%" height="562" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Cit%C3%A9%20Olympique,%20Tunis&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://soap2day-to.com"></a><br>
+            <style>.mapouter {
+                position: relative;
+                text-align: right;
+                height: 562px;
+                width: 100%;
+            }</style>
+            <a href="https://www.embedgooglemap.net">embedding google maps</a>
+            <style>.gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 562px;
+                width: 100%;
+            }</style>
+        </div>
+    </div>
 </section>
-<footer style="height: 15vh; background-color: #EFEBE6 ">
-    <br><br><hr>
-<div class="row">
-    <div class="col">
-        <div  class="gold-text" style="color: black; margin-top: 2px">All rights reserved</div>
+<footer style="height: 15vh; background-color: #EFEBE6;">
+    <div class="flex-center">
+        <hr class="mt-5 he">
     </div>
-    <div class="col">
-        <div class="gold-text" style="color: black; margin-top: 2px">© Copyright 2021 Company Name</div>
+    <div class="row">
+        <div class="col flex-center">
+            <div class="gold-text" style="color: black; margin-top: 2px">All rights reserved</div>
+        </div>
+        <div class="col flex-center">
+            <div class="gold-text" style="color: black; margin-top: 2px">© Copyright 2021 Company Name</div>
+
+        </div>
+        <div class="col flex-center">
+            <div class="gold-text" style="color: black; margin-top: 2px">Produced by Company Name</div>
+
+        </div>
+
 
     </div>
-    <div class="col">
-        <div class="gold-text" style="color: black; margin-top: 2px">Produced by Company Name</div>
-
-    </div>
-
-
-</div>
 
 
 </footer>
 <script>
+    let email="bachbrahem@gmail.com"
+    function sendMail() {
+        let name = document.getElementById("name").value
+        let phone = document.getElementById("phone").value
+        let subject = document.getElementById("subject").value
+        let message = document.getElementById("message").value
+        let body = "name is: " + name + "%0Aphone is: " + phone + "%0Amessage: " + message
+        let link = "mailto:"+email+"?subject=" + subject + "&body=" + body;
+        window.open(link, '_blank').focus();
+    }
+
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
     }

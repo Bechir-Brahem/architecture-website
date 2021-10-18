@@ -33,8 +33,9 @@ header .landing-overlay {
     right: 0;
     bottom: 0;
     background-image: linear-gradient(rgba(5, 21, 27, 0), rgba(5, 21, 27, 1)); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
 }
+
 
 .flex-center {
     display: flex;
@@ -88,14 +89,6 @@ section .container-mid {
     padding: 10%;
 }
 
-section .left-part {
-    width: 50%;
-
-}
-
-section .right-part {
-    width: 50%;
-}
 
 .normal-text {
     /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod aliqua. */
@@ -134,7 +127,7 @@ body {
 
 .clock {
     height: 60vh;
-    width: 20vw;
+    width: 80%;
     border: #E3AE7E 2px solid;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 
@@ -146,11 +139,12 @@ body {
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 20; /* Sit on top */
     left: 0;
     top: 0;
     /*background-color: rgb(0, 0, 0); !* Black fallback color *!*/
-    background-color: rgba(0, 0, 0, 0.95); /* Black w/opacity */
+    background-color:#05151B;
+; /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -158,29 +152,43 @@ body {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
+.nav-image {
+    border: #E3AE7E 2px solid;
+    width: 100%;
+    height: 75vh;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+
+}
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+
+
+}
+.un {
+  transition: 300ms;
+  border-bottom: 1px solid transparent;
 }
 
+.un:hover {
+  border-color: white;
+}
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: white;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
+    z-index: 100;
     position: absolute;
     top: 20px;
     right: 45px;
@@ -188,22 +196,12 @@ body {
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
 
 .navbar {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 20;
 }
 
 
@@ -327,13 +325,150 @@ body {
     border: black 1px solid;
     border-radius: 100px;
     color: black;
-    transition: 100ms ;
-    transition-property: color,background-color;
+    transition: 100ms;
+    transition-property: color, background-color;
 }
-.next-button:hover{
+
+.next-button:hover {
     background-color: rgba(0, 0, 0, 1);
-    color:white;
+    color: white;
 }
+
 .next-text {
     font-size: 25px;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.gold-text3 {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #E3AE7E;
+    text-transform: uppercase;
+
+}
+
+.title4 {
+    color: #05151B;
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.more-text4 {
+    color: #05151B;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 40%;
+
+
+}
+@media screen and (max-width: 600px){
+    .more-text4{
+        width: 70%;
+
+    }
+}
+
+
+.text-footer {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFFB2;
+    width: 40%;
+
+}
+
+.columns{
+    flex-direction: column;
+}
+
+.bouton {
+    width: 20vw;
+    min-width: 200px;
+    height: 50px;
+    background-color: #E3AE7E;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+
+
+}
+
+.bouton:hover {
+    background-color: #E3AE7Ef0;
+    color: black;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+
+}
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+.specific{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border: #E3AE7E 1px solid;
+    border-radius: 100px;
+
+}
+
+
+
+

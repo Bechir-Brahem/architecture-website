@@ -18,20 +18,48 @@
 <nav id="myNav" class="overlay">
 
     <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" style="color: white" ><span onclick="closeNav()">&times;</span></a>
 
     <!-- Overlay content -->
-    <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+    <div class="overlay-content container pt-5 mt-5">
+        <div id="content" class="row">
+            <div class="col-lg-6 col-md-12">
+
+                <div id="hide2">
+                    <div style="display: flex;flex-direction: column">
+                        <a id="x" class="title-text-sm" href="javascript:void(0)"><span class="un" onclick="gotoHome()">Home</span></a>
+                        <a class="title-text-sm" href="javascript:void(0)"><span class="un"
+                                                                                 onclick="gotoAbout()">About</span></a>
+                        <a class="title-text-sm" href="javascript:void(0)"><span class="un" onclick="gotoServices()">Services</span></a>
+                        <a class="title-text-sm" href="javascript:void(0)"><span class="un" onclick="gotoProjects()">Projects</span></a>
+                        <a class="title-text-sm" href="/contact"><span class="un">Contact Us</span></a>
+                    </div>
+                    <div id="hide" style="height: 20vh;display: flex;flex-direction: column;justify-content: flex-end">
+                        <div class="more-text" style="color: #FFFFFF80;">
+                            FB <span style="color:#E3AE7E;padding:0 7px"> / </span> IG <span
+                                style="padding:0 7px;color:#E3AE7E;"> / </span> YT
+                        </div>
+                        <div class="more-text pt-5" style="color:  #FFFFFF80;width: 50%">
+                            Centre Commercial Boukhris, Rue Om Elaraeis Elmourouj 1, 2074 Tunisie
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="flex-center d-none d-lg-flex">
+                    <img src="/static/images/navbar-image.png" class="nav-image" alt="skyscraper">
+                </div>
+
+            </div>
+        </div>
     </div>
 
 </nav>
 <!--<span onclick="openNav()">open</span>-->
-<div class="navbar" style="color: white" onclick="openNav()"><img class="hamburger" src="/static/images/hamburger.png"></div>
+<div class="navbar" style="color: white" onclick="openNav()"><img class="hamburger" src="/static/images/hamburger.png">
+</div>
 
-<header>
+<header id="home">
     <div id="landing-building">
         <div class="landing-overlay">
             <div class="top-section"></div>
@@ -53,36 +81,39 @@
 </header>
 <section style="min-height: 100vh">
     <div class="container-mid" style="display: flex;">
-        <div class="left-part">
-            <p class="gold-text" style="text-align: left">what makes us different</p>
-            <h1 class="title-text-sm">Providing Unique & Priceless Experience</h1>
-            <hr style="width: 25%;color: #E3AE7E;margin: 0;margin-top: 20px">
-            <p class="normal-text" style="margin-top: 30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Animi at corporis
-                doloremque ducimus, eligendi
-                harum illo illum maiores quasi qui tenetur veritatis. Adipisci illum nesciunt odio officia, optio soluta
-                ullam.</p>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <p class="gold-text" style="text-align: left">what makes us different</p>
+                <h1 class="title-text-sm">Providing Unique & Priceless Experience</h1>
+                <hr style="width: 25%;color: #E3AE7E;margin: 0;margin-top: 20px">
+                <p class="normal-text" style="margin-top: 30px">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Animi at corporis
+                    doloremque ducimus, eligendi
+                    harum illo illum maiores quasi qui tenetur veritatis. Adipisci illum nesciunt odio officia, optio
+                    soluta
+                    ullam.</p>
+            </div>
+            <div class="col-lg-6 col-12 flex-center mt-lg-0 mt-5">
+                <img src="/static/images/monguela.jpg" class="clock" alt="clock">
+            </div>
         </div>
-        <div class="right-part flex-center">
-            <img src="/static/images/monguela.jpg" class="clock" alt="clock">
-        </div>
-
     </div>
 
 
 </section>
-<section style="min-height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
+<section id="about" style="min-height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <p class="gold-text" style="text-align: left">Domaines D’Etudes</p>
                 <h1 class="title-text-sm" style="color: #05151B">What we do</h1>
                 <p class="normal-text" style="color: #05151B;padding-top: 20px">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col">
+            <div class="col-lg-2 d-lg-flex d-none"></div>
+            <div class="col-12 col-lg-5 mt-5 ">
                 <hr style="margin: 0">
                 <div class="side-block">
                     <h1 style="">1</h1>
@@ -121,7 +152,7 @@
     </div>
 
 </section>
-<section style="min-height: 100vh;padding: 5% 0 ">
+<section id="services" style="min-height: 100vh;padding: 5% 0 ">
     <div class="container">
         <div class="mb-5">
             <p class="gold-text">our services</p>
@@ -129,7 +160,7 @@
 
         </div>
         <div class="row">
-            <div class="col-5 service mt-5">
+            <div class="col-md-5 col-sm-12 service mt-5">
                 <div class="flex-center">
                     <img src="/static/images/diamond.png" alt="diamond">
                 </div>
@@ -137,8 +168,8 @@
                 <p class="more-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5 service mt-5">
+            <div class="col-2 d-none d-md-flex"></div>
+            <div class="col-md-5 col-sm-12 service mt-5">
                 <div class="flex-center">
                     <img src="/static/images/eye.png" alt="diamond">
                 </div>
@@ -148,7 +179,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-5 service mt-5">
+            <div class="col-md-5 col-sm-12 service mt-5">
                 <div class="flex-center">
                     <img src="/static/images/world.png" alt="diamond">
                 </div>
@@ -156,8 +187,8 @@
                 <p class="more-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5 service mt-5">
+            <div class="col-2 d-none d-md-flex"></div>
+            <div class="col-md-5 col-sm-12 service mt-5">
                 <div class="flex-center">
                     <img src="/static/images/house.png" alt="diamond">
                 </div>
@@ -173,10 +204,10 @@
 <section style="min-height: 100vh;background-color: #EFEBE6">
 
 </section>
-<section style="min-height: 100vh;background-color: #05151B;padding-top: 10vh">
+<section id="projects" style="min-height: 100vh;background-color: #05151B;padding-top: 10vh">
     <div class="container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col-6 d-none d-lg-flex "></div>
             <div class="col why-hatem">
                 <p class="gold-text">why HATEM Souguir LTD</p>
                 <h1 class="title-text-sm2 mt-2">What makes us Different</h1>
@@ -195,16 +226,16 @@
         </div>
         <div class="mt-5"></div>
         <div class="row">
-            <div class="col-4 img1 hatem-image"></div>
-            <div class="col-4 img2 hatem-image"></div>
-            <div class="col-4 img3 hatem-image"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 img1 hatem-image "></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 img2 hatem-image"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 img3 hatem-image"></div>
         </div>
     </div>
 
 </section>
 <section style="min-height: 100vh;background-color: #EFEBE6">
 
-    <div class="" style="padding :10vh">
+    <div class="" style="padding :10vh;position: relative">
         <div id="image-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -219,20 +250,89 @@
                     </li>
                 </ul>
             </div>
+            <div style="position: absolute;width: 30%;background-color: #EFEBE6;bottom: 0;padding-top: 40px;padding-bottom: 10px"
+                 class="flex-center">
+                <div class="gold-text3"> selected work</div>
+            </div>
         </div>
-        <div class="d-flex pt-4" style="width: 100%;justify-content: flex-end">
-            <div class="flex-center next-button" onclick="slidePrev()">
-                <div class="next-text">prev</div>
+        <div id="textToAlign" class="">
+            <div class="title4 p-4">Our Projects</div>
+            <div class="more-text4 ps-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                ut
+                labore et dolore
+                magna aliqua.
             </div>
-            <div class="flex-center next-button" onclick="slideNext()">
-                <div class="next-text">next</div>
-            </div>
+        </div>
+        <!--        <div class="d-flex pt-4" style="width: 100%;justify-content: flex-end">-->
+        <!--            <div class="flex-center next-button" onclick="slidePrev()">-->
+        <!--                <div class="noselect next-text">Prev</div>-->
+        <!--            </div>-->
+        <!--            <div class="flex-center next-button" onclick="slideNext()">-->
+        <!--                <div class="noselect next-text">Next</div>-->
+        <!--            </div>-->
 
+        <!--        </div>-->
+    </div>
+</section>
+<section style="min-height: 100vh;background-color: #05151B ">
+    <div style="padding-top: 20vh">
+        <div class="flex-center">
+            <div class="text-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+            </div>
         </div>
+        <div class="flex-center pt-5"><a href="/contact" class="bouton flex-center">get in touch</a></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 flex-center pt-5 columns">
+                    <span class="title-text-sm">Talk</span>
+                    <span class="gold-text specific">+21698622126</span>
+                </div>
+                <div class="col-sm-12 col-md-4 flex-center columns pt-5">
+                    <span class="title-text-sm">Meet</span>
+                    <span class="gold-text specific">2074 Adresse Mourouj 1</span>
+                </div>
+                <div class="col-sm-12 col-md-4 flex-center columns pt-5">
+                    <span class="title-text-sm">Write</span>
+                    <span class="gold-text specific">h.souguir@engineering-hs.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-center mt-5 pt-5">
+            <div class="circle"></div>
+            <div class="circle ms-4"></div>
+        </div>
+
+        <div class="text-footer pt-5 mt-5" style="text-align: center;width: 100%">
+            © Copyright 2021 Company Name
+        </div>
+
     </div>
 </section>
 <script src="/static/javascript/splide.min.js"></script>
 <script>
+    function gotoHome() {
+        closeNav()
+        setTimeout(() => document.getElementById("home").scrollIntoView({behavior: "smooth"}), 600)
+    }
+
+    function gotoAbout() {
+        closeNav()
+        setTimeout(() => document.getElementById("about").scrollIntoView({behavior: "smooth"}), 600)
+    }
+
+    function gotoServices() {
+        closeNav()
+        setTimeout(() => document.getElementById("services").scrollIntoView({behavior: "smooth"}), 600)
+    }
+
+    function gotoProjects() {
+        closeNav()
+        setTimeout(() => document.getElementById("projects").scrollIntoView({behavior: "smooth"}), 600)
+    }
+
     function slideNext() {
         let a = splide.Components.Controller;
         let cur = a.getIndex() + 1;
@@ -249,16 +349,18 @@
 
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
+        setTimeout(() => document.getElementById("hide2").style.display = "block", 100);
     }
 
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
+        setTimeout(() => document.getElementById("hide2").style.display = "none", 200);
     }
 
     document.addEventListener('DOMContentLoaded', function () {
         splide = new Splide('#image-slider', {
             cover: true,
-            heightRatio: 0.5,
+            heightRatio: 0.6,
             type: "loop",
             // arrows: null
         }).mount();
