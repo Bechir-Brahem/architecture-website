@@ -1,5 +1,5 @@
-body{
-margin:0;
+body {
+    margin: 0;
 }
 
 .overlay {
@@ -61,10 +61,10 @@ margin:0;
     }
 }
 
-.navigation{
+.navigation {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-     /* Full width */
+    /* Full width */
 }
 
 
@@ -74,20 +74,26 @@ margin:0;
     margin: 1% 0 0 1%;
 }
 
-.main{
+.main {
     min-height: 200vh;
-    background : linear-gradient(0deg, #EFEBE6 70%, #05151B 30%);
+    background: linear-gradient(0deg, #EFEBE6 70%, #05151B 30%);
 }
-img{
 
-    width: 100% ;
+img {
+
+    width: 100%;
     margin: 10% 0;
 }
-.title{
+
+.a {
+    min-height: 600px;
+}
+
+.title {
     /* Premuim Residence */
 
 
-    padding-top : 5%;
+    padding-top: 5%;
 
     font-family: Playfair Display;
     font-style: normal;
@@ -98,9 +104,11 @@ img{
 
     color: #FFFFFF;
 }
-.row{
+
+.row {
     margin: 0 1px 0 10px;
 }
+
 .gold-text {
     font-family: Roboto, sans-serif;
     font-size: 12px;
@@ -111,7 +119,7 @@ img{
     text-align: center;
     color: #E3AE7E;
     text-transform: uppercase;
-padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 
@@ -125,61 +133,67 @@ padding: 10px 30px 10px 30px;
     line-height: 24px;
     /* or 150% */
 
-padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
     color: #05151B !important;
 
 
 }
-.col-4{
+
+.col-4 {
     text-align: center !important;
 
 }
-.span1{
-    width: 30%;
 
-}
-.span1 .normal-text,.gold-text{
+
+.normal-text, .gold-text {
     text-align: left !important;
 }
-.span2{
-    width: 70%;
-}
-.span2 .normal-text{
+
+
+.span2 .normal-text {
     padding-right: 120px;
 }
-.container{
+
+.container {
     display: flex;
 }
-.buttonVisit{
+
+.buttonVisit {
     background-color: transparent;
     border: #E3AE7E 2px solid;
     border-radius: 30px;
     box-shadow: none;
     padding: 10px;
     width: 15%;
+    min-width: 200px;
     transition: background-color 150ms ease-in-out;
 
 }
-.bouton{
+
+.bouton {
     text-align: center;
 }
-.buttonVisit:hover{
+
+.buttonVisit:hover {
     background-color: #0d2c38 !important;
     border-color: #0d2c38;
     color: white;
 }
-hr{
+
+hr {
     width: 80%;
     margin: 6% 6% 3% 6% !important;
 }
-.footer{
+
+.footer {
     padding: 0 50px 50px 50px;
 }
-svg{
+
+svg {
     margin: 0 15px 0;
 }
-.prvnxt{
 
+.prvnxt {
 
 
     font-family: Roboto;
@@ -195,6 +209,7 @@ svg{
 
 
 }
-.content{
-    padding:0 15% !important;
+
+.content {
+    padding: 0 15% !important;
 }

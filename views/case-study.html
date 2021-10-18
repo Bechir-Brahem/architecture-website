@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/static/stylesheets/case-study.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/stylesheets/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
@@ -41,35 +40,34 @@
 
     <div class="content">
         <div style="text-align: center">
-            <img src="../static/images/Rectangle.png" alt="">
+            <img src="../static/images/Rectangle.png" class="a" alt="">
         </div>
         <div class="container">
-        <span class="span1">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="gold-text"> Year</div>
+                    <div class="normal-text">
+                        2008
+                    </div>
+                    <div class="gold-text"> Location</div>
 
-               <div class="gold-text"> Year</div>
+                    <div class="normal-text">
+                        New York
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 mt-5 mt-md-0">
+                    <div class="gold-text"> Description</div>
+                    <div class="normal-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
+                        architecto, debitis dignissimos id illo inventore qui quia repudiandae veniam? Cum dolores
+                        eveniet
+                        odit pariatur provident qui, quibusdam quisquam tenetur.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-               <div class="normal-text">
-                   2008
-               </div>
-
-
-
-               <div class="gold-text"> Location</div>
-
-               <div class="normal-text">
-                   New York
-               </div>
-
-       </span>
-        <span class="span2">
-        <div class="gold-text"> Description</div>
-            <div class="normal-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam architecto, debitis dignissimos id illo inventore qui quia repudiandae veniam? Cum dolores eveniet odit pariatur provident qui, quibusdam quisquam tenetur.</div>
-        </span>
     </div>
-
-    </div>
-    <div class="bouton">
+    <div class="bouton mt-5 mt-md-0">
         <button class="buttonVisit">Visit Website</button>
     </div>
 
@@ -78,9 +76,8 @@
     </div>
 
     <div class="footer">
-        <div class="row">
-            <div class="col-2">
-
+        <div  style="display: flex;justify-content: space-between;width: 100%">
+            <span>
                 <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4737 19L1.42105 10.3818L1 9.94545L1.42105 9.61818L10.4737 1L11 1.54545L2.16982 10L11 18.4545L10.4737 19Z"
                           fill="#E3AE7E" stroke="#E3AE7E"/>
@@ -88,21 +85,16 @@
                 <a href="" class="prvnxt">
                     Previous Project
                 </a>
+            </span>
 
-            </div>
-
-            <div class="col-8">
-
-            </div>
-            <div class="col-2">
+            <span>
                 <a href="" class="prvnxt">Next Project</a>
 
                 <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.52632 1L10.5789 9.61818L11 10.0545L10.5789 10.3818L1.52632 19L1 18.4545L9.83018 10L1 1.54545L1.52632 1Z"
                           fill="#E3AE7E" stroke="#E3AE7E"/>
                 </svg>
-
-            </div>
+            </span>
         </div>
     </div>
 </section>
