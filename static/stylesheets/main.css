@@ -143,8 +143,7 @@ body {
     left: 0;
     top: 0;
     /*background-color: rgb(0, 0, 0); !* Black fallback color *!*/
-    background-color:#05151B;
-; /* Black w/opacity */
+    background-color: #05151B;; /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -164,6 +163,7 @@ body {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     position: relative;
 }
+
 /* The navigation links inside the overlay */
 .overlay a {
     padding: 10px;
@@ -177,7 +177,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
- color: #E3AE7E;
+    color: #E3AE7E;
 
 }
 
@@ -383,8 +383,9 @@ body {
 
 
 }
-@media screen and (max-width: 600px){
-    .more-text4{
+
+@media screen and (max-width: 600px) {
+    .more-text4 {
         width: 70%;
 
     }
@@ -404,7 +405,7 @@ body {
 
 }
 
-.columns{
+.columns {
     flex-direction: column;
 }
 
@@ -452,12 +453,13 @@ body {
         transform: translate3d(4px, 0, 0);
     }
 }
-.specific{
+
+.specific {
     font-size: 16px;
     padding-top: 5px;
 }
 
-.circle{
+.circle {
     height: 100px;
     width: 100px;
     border: #E3AE7E 1px solid;
@@ -485,3 +487,75 @@ body {
 }
 
 
+#cf {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#cf img {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+    opacity: 0;
+}
+
+.blocks {
+    z-index: 50;
+    margin-top: 15vh;
+    height: 70vh;
+    padding: 0 2vw;
+    font-family: Playfair Display SC, sans-serif;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.digits {
+    font-family: Playfair Display SC,sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #FFFFFF26;
+
+
+}
+
+.sblocks {
+    background-color: #0d2c38;
+    height: 70vh;
+    padding: 20px;
+    transition-property: margin-top, height;
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sblocks:hover {
+    margin-top: 5vh;
+    height: 60vh;
+}
