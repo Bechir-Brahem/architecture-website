@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/stylesheets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&family=Playfair+Display&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&family=Poppins:wght@100&family=Playfair+Display&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="/static/stylesheets/splide.min.css">
 </head>
@@ -18,14 +18,21 @@
 <nav id="myNav" class="overlay">
 
     <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" style="color: white"><span onclick="closeNav()">&times;</span></a>
+    <a href="javascript:void(0)" class="closebtn">
+        <span onclick="closeNav()">
+        <span class="flex-center">
+            <span class="tmp">CLOSE</span>
+            <img src="/static/images/Close.svg" alt="">
+        </span>
+    </span>
+    </a>
 
     <!-- Overlay content -->
-    <div class="overlay-content container pt-5 mt-5">
+    <div class="overlay-content container ">
         <div id="content" class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between">
 
-                <div id="hide2">
+                <div id="hide2" style="height: 60vh">
                     <div style="display: flex;flex-direction: column" id="links">
                         <a class="title-text-sm elts" href="javascript:void(0)"><span class="un" onclick="gotoHome()">Accueil</span></a>
                         <a class="title-text-sm elts" href="javascript:void(0)"><span class="un" onclick="gotoAbout()">À Propos</span></a>
@@ -36,23 +43,21 @@
                         <a class="title-text-sm elts" href="/contact"><span class="un">Contact</span></a>
                     </div>
                     <div id="hide" style="height: 20vh;display: flex;flex-direction: column;justify-content: flex-end">
-                        <div class="more-text" style="color: #FFFFFF80;">
-                            FB <span style="color:#E3AE7E;padding:0 7px"> / </span> IG <span
-                                style="padding:0 7px;color:#E3AE7E;"> / </span> YT
-                        </div>
                         <div class="more-text pt-5" style="color:  #FFFFFF80;width: 50%">
                             Centre Commercial Boukhris, Rue Om Elaraeis Elmourouj 1, 2074 Tunisie
+                        </div>
+                        <div class=" pt-5"><a href="#" class="bouton2 flex-center"><p>Telecharger la plaquette</p></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 " id="degla">
-                <div class="flex-center d-none d-lg-flex">
-                    <img src="/static/images/nav1.png" class="nav-image" alt="skyscraper">
-                    <img src="/static/images/nav2.png" class="nav-image" style="width: 0;border: 0" alt="skyscraper">
-                    <img src="/static/images/nav3.png" class="nav-image" style="width: 0;border: 0" alt="skyscraper">
-                    <img src="/static/images/nav4.png" class="nav-image" style="width: 0;border: 0" alt="skyscraper">
-                    <img src="/static/images/nav5.png" class="nav-image" style="width: 0;border: 0" alt="skyscraper">
+                <div class="flex-center d-none d-lg-flex cf2">
+                    <img src="/static/images/nav1.png" class="" alt="skyscraper">
+                    <img src="/static/images/nav2.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav3.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav4.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav5.png" class="" style="opacity: 0" alt="skyscraper">
                 </div>
 
             </div>
@@ -191,7 +196,7 @@
 <section id="services" style="min-height: 100vh;padding: 5% 0 ">
     <div class="container">
         <div class="mb-5">
-            <p class="gold-text">NOS SERVICES</p>
+            <p class="gold-text mb-3">NOS SERVICES</p>
             <h1 class="services-title">Offrir l'excellence</h1>
 
         </div>
@@ -238,7 +243,7 @@
 
 </section>
 <section style="height: 100vh;background-color: #EFEBE6">
-    <div id="cf">
+    <div class="cf">
         <img class="bg-img" src="static/images/bg1.png"/>
         <img class="bg-img" src="static/images/bg2.png"/>
         <img class="bg-img" src="static/images/bg3.png"/>
@@ -284,9 +289,9 @@
     <div class="container">
         <div class="row">
             <div class="col-6 d-none d-lg-flex "></div>
-            <div class="col why-hatem">
-                <p class="gold-text">Hatem Souguir Engineering</p>
-                <h1 class="title-text-sm2 mt-2">Pourquoi Nous Choisir</h1>
+            <div class="col">
+                <p class="gold-text" style="text-align: left;margin-bottom: 5vh">Hatem Souguir Engineering</p>
+                <h1 class="title-text-sm-l mt-2">Pourquoi Nous Choisir</h1>
                 <p class="more-text mt-2" style="color: white"> La société met au service de ses clients un large panel
                     de compétences techniques, dotée des outils les plus modernes et tournée vers l’innovation.
                 </p>
@@ -299,9 +304,18 @@
         </div>
         <div class="mt-5"></div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 img1 hatem-image "></div>
-            <div class="col-lg-4 col-md-6 col-sm-12 img2 hatem-image"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12 img3 hatem-image"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12 aa">
+                <img src="/static/images/Pourquoi1.png" alt="">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 aa">
+                <img src="/static/images/Pourquoi2.png" alt="">
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 aa">
+                <img src="/static/images/Pourquoi3.png" alt="">
+
+            </div>
         </div>
     </div>
 
@@ -360,15 +374,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-4 flex-center pt-5 columns">
-                    <span class="title-text-sm">Appel</span>
+                    <span class="title-text-sm-l">Appel</span>
                     <span class="gold-text specific">+21698622126</span>
                 </div>
                 <div class="col-sm-12 col-md-4 flex-center columns pt-5">
-                    <span class="title-text-sm">Visite</span>
+                    <span class="title-text-sm-l">Visite</span>
                     <span class="gold-text specific">2074 Adresse Mourouj 1</span>
                 </div>
                 <div class="col-sm-12 col-md-4 flex-center columns pt-5">
-                    <span class="title-text-sm">Email</span>
+                    <span class="title-text-sm-l">Email</span>
                     <span class="gold-text specific">h.souguir@engineering-hs.com</span>
                 </div>
             </div>
@@ -446,13 +460,12 @@
         }).mount();
     });
     l = document.getElementsByClassName("elts")
-    navImages = document.getElementsByClassName("nav-image")
+    navImages = document.querySelectorAll(".cf2 img")
     changeImage = _.debounce((a) => {
         for (let i = 0; i < navImages.length; i++) {
-            navImages[i].style.width = "0";
-            navImages[i].style.border = "0";
+            navImages[i].style.opacity = "0";
         }
-        navImages[a].style.width = "100%";
+        navImages[a].style.opacity = "1";
         navImages[a].style.border = " #E3AE7E 2px solid";
     }, 200);
 
