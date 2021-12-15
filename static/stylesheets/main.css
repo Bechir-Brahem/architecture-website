@@ -120,17 +120,37 @@ section .container-mid {
 
 }
 
+.title-text-sm-l {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
 body {
     overflow-x: hidden;
 }
 
 
 .clock {
-    height: 60vh;
-    width: 80%;
+    height: 80vh;
+    max-width: 100%;
     border: #E3AE7E 2px solid;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 
+}
+
+.content {
+    padding: 0 7%;
+    padding-top: 8vh;
 }
 
 
@@ -211,13 +231,13 @@ body {
     display: flex;
     justify-content: space-between;
     /*padding-top: %;*/
-    padding-bottom: 10%;
+    padding-bottom: 8%;
 
 }
 
 .side-text {
     padding-left: 50px;
-    padding-top: 8%;
+    padding-top: 6%;
 
 }
 
@@ -529,12 +549,13 @@ body {
     transition-property: padding;
     transition-duration: 500ms;
 }
-.blocks:hover{
+
+.blocks:hover {
     padding: 5vh 2vw;
 }
 
 .digits {
-    font-family: Playfair Display SC,sans-serif;
+    font-family: Playfair Display SC, sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -552,5 +573,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+
+.arrow {
+    height: 15vh;
+}
+
+.sm-big {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* or 150% */
+
+    color: #05151B;
 
 }

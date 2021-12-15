@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/stylesheets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&family=Playfair+Display&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="/static/stylesheets/splide.min.css">
 </head>
@@ -62,8 +62,9 @@
 </nav>
 <!--<span onclick="openNav()">open</span>-->
 <div class="navbar" style="color: white" onclick="openNav()">
-    <div style="display: flex;justify-content: flex-end;width: 100%;"><img class="hamburger"
-                                                                           src="/static/images/hamburger.png"></div>
+    <div style="display: flex;justify-content: flex-end;width: 100%;">
+        MENU<img class="hamburger" src="/static/images/hamburger.png">
+    </div>
 </div>
 
 <header id="home">
@@ -92,7 +93,7 @@
                     <div class="pt-4"><a href="/contact" class="bouton2 flex-center">Telecharger la Plaquette</a></div>
                 </div>
                 <div class="col-2" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="circle"></div>
+                    <img src="/static/images/Arrowie.svg" alt="" class="arrow">
 
                 </div>
             </div>
@@ -102,40 +103,51 @@
     </div>
 </header>
 <section style="min-height: 100vh">
-    <div class="container-mid" style="display: flex;">
+    <div class="content" style="display: flex;">
         <div class="row">
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-4 col-12 pt-5">
                 <p class="gold-text" style="text-align: left">À propos d'HS Engineering</p>
-                <h1 class="title-text-sm">Offrir Une Expérience Unique & Inestimable</h1>
+                <p class="title-text-sm-l">Offrir Une Expérience Unique & Inestimable</p>
                 <hr style="width: 25%;color: #E3AE7E;margin: 0;margin-top: 20px">
-                <p class="normal-text" style="margin-top: 30px">Fondée par Hatem SOUGUIR, Gérant Ingénieur, en 2019, HS
-                    ENGINEERING est un bureau d’étude pliridisciplinaire qui jouit d’un vaste domaine de compétence
-                    offrant un service complet jusqu’à l’achèvement de l’étude du projet.</p>
             </div>
-            <div class="col-lg-6 col-12 flex-center mt-lg-0 mt-5">
-                <img src="/static/images/monguela.jpg" class="clock" alt="clock">
+            <div class="col-lg-4 col-12 flex-center ">
+                <img src="/static/images/ClockPic.png" class="clock" alt="clock">
+            </div>
+            <div class="col-lg-4 col-12">
+
+                <div style="height:100%;display: flex;flex-direction: column;justify-content: flex-end">
+                    <p class="normal-text ps-5 mb-4" style="margin-top: 30px">
+                        Fondée par Hatem SOUGUIR, Gérant Ingénieur, en 2019,
+                        HS ENGINEERING est un bureau d’étude pliridisciplinaire qui jouit d’un vaste domaine de
+                        compétence
+                        offrant un service complet jusqu’à l’achèvement de l’étude du projet.</p>
+                    <img src="/static/images/Arrowie.svg" alt="" class="arrow mb-5">
+                </div>
             </div>
         </div>
     </div>
 
 
 </section>
-<section id="about" style="min-height: 100vh;background-color: #EFEBE6;padding-top: 20vh;">
+<section id="about" style="min-height: 100vh;background-color: #EFEBE6;padding-top: 10vh;">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-6 mt-5 pe-lg-5 ps-0 pp">
                 <p class="gold-text" style="text-align: left">Domaines D’Etudes</p>
-                <h1 class="title-text-sm" style="color: #05151B">What we do</h1>
-                <p class="normal-text" style="color: #05151B;padding-top: 20px">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
+                <h1 class="title-text-sm" style="color: #05151B">Ce que nous faisons</h1>
+                <p class="normal-text" style="color: #05151B;padding-top: 20px">Notre expertise technique ajoutée à
+                    notre créativité nous permet de relever de nombreux défis et d’enrichir notre expérience. Nous
+                    sommes à même de vous proposer des solutions
+                    innovantes et durables pour vos projets, dans le respect de votre budget.</p>
             </div>
-            <div class="col-lg-2 d-lg-flex d-none"></div>
-            <div class="col-12 col-lg-5 mt-5 ">
+            <div class="col-12 col-lg-6 mt-5 ps-lg-5 ps-0 pp2">
                 <hr style="margin: 0">
                 <div class="side-block">
                     <h1 style="">1</h1>
-                    <p class="side-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+                    <p class="side-text">
+                        <span class="sm-big">ingenierie</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
 
@@ -143,7 +155,9 @@
                 <hr style="margin: 0">
                 <div class="side-block">
                     <h1 style="">2</h1>
-                    <p class="side-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="side-text">
+                        <span class="sm-big">management</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
 
@@ -151,7 +165,9 @@
                 <hr style="margin: 0">
                 <div class="side-block">
                     <h1 style="">3</h1>
-                    <p class="side-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="side-text">
+                        <span class="sm-big">expertise</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
 
@@ -159,7 +175,9 @@
                 <hr style="margin: 0">
                 <div class="side-block">
                     <h1 style="">4</h1>
-                    <p class="side-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="side-text">
+                        <span class="sm-big">audit</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.</p>
 
@@ -446,10 +464,10 @@
 
     function setBg(elt) {
         let imgs = document.getElementsByClassName("bg-img")
-        for (let i =0;i<imgs.length;i++){
-            imgs[i].style.opacity='0'
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].style.opacity = '0'
         }
-        imgs[elt].style.opacity='1'
+        imgs[elt].style.opacity = '1'
     }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
