@@ -2,6 +2,7 @@ body {
     background-color: #05151B;
 }
 
+
 p, h1, body {
     margin: 0;
 }
@@ -186,7 +187,7 @@ body {
 }
 
 /* The navigation links inside the overlay */
-.overlay a.elts {
+a.elts {
     padding: 10px;
     text-decoration: none;
     font-size: 36px;
@@ -197,13 +198,14 @@ body {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a.elts:hover, .overlay a.elts:focus{
+a.elts:hover, a.elts:focus {
     color: #E3AE7E;
 
 }
- a.closebtn{
-     color: transparent;
- }
+
+a.closebtn {
+    color: transparent;
+}
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
@@ -217,7 +219,7 @@ body {
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
 .navbar {
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed !important; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 19;
@@ -427,7 +429,7 @@ body {
     min-width: 200px;
     background-color: #E3AE7E;
     color: black;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 50px;
     text-transform: uppercase;
     text-decoration: none;
@@ -435,7 +437,6 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;
     letter-spacing: 1px;
 
 
@@ -526,7 +527,7 @@ body {
 }
 
 .blocks {
-    z-index: 50;
+    z-index: 10;
     margin-top: 15vh;
     height: 70vh;
     padding: 0 2vw;

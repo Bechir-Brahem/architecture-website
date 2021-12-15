@@ -66,13 +66,13 @@
 
 </nav>
 <!--<span onclick="openNav()">open</span>-->
-<div class="navbar" style="color: white" onclick="openNav()">
+<div class="navbar" style="color: white" >
     <div style="display: flex;justify-content: flex-end;width: 100%;">
-        MENU<img class="hamburger" src="/static/images/hamburger.png">
+        <span onclick="openNav()">MENU<img class="hamburger" src="/static/images/hamburger.png"></span>
     </div>
 </div>
 
-<header id="home">
+<header id="home" style="min-height: 100vh">
     <div id="landing-building">
         <div class="landing-overlay">
             <div class="top-section"></div>
@@ -83,23 +83,22 @@
                         <p class="gold-text">BUREAU D’ETUDES STRUCTURES</p>
                     </div>
                     <div>
-                        <h1 class="title-text">Building For The Future</h1>
+                        <h1 class="title-text">Bâtir pour l'avenir</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-3" style="display: flex;flex-direction: column;">
-                    <div class="normal-text">Résoudre vos problématiques projets est notre priorité. Grâce à nos
+                <div class="col-md-2 col-0"></div>
+                <div class="col-md-3 col-sm-12" style="display: flex;flex-direction: column;">
+                    <div class="normal-text ps-2 pe-2">Résoudre vos problématiques projets est notre priorité. Grâce à nos
                         connaissances techniques en
                         génie civil et bâtiment, méthodes chantier, nous mettrons tout en œuvre pour vous apporter une
                         solution.
                     </div>
-                    <div class="pt-4"><a href="/contact" class="bouton2 flex-center">Telecharger la Plaquette</a></div>
+                    <div class="pt-4"><a href="#" class="bouton flex-center" style="width: 80%">Telecharger la Plaquette</a></div>
                 </div>
-                <div class="col-2" style="display: flex;justify-content: center;align-items: center;">
-                    <img src="/static/images/Arrowie.svg" alt="" class="arrow">
-
+                <div class="col-md-2 col-12 flex-center">
+                    <img src="/static/images/Arrowie.svg" alt="" class="arrow" onclick="goto('about')">
                 </div>
             </div>
 
@@ -107,7 +106,7 @@
 
     </div>
 </header>
-<section style="min-height: 100vh">
+<section style="min-height: 100vh" id="about">
     <div class="content" style="display: flex;">
         <div class="row">
             <div class="col-lg-4 col-12 pt-5">
@@ -126,7 +125,7 @@
                         HS ENGINEERING est un bureau d’étude pliridisciplinaire qui jouit d’un vaste domaine de
                         compétence
                         offrant un service complet jusqu’à l’achèvement de l’étude du projet.</p>
-                    <img src="/static/images/Arrowie.svg" alt="" class="arrow mb-5">
+                    <img src="/static/images/Arrowie.svg" alt="" class="arrow mb-5" onclick="goto('domaines')">
                 </div>
             </div>
         </div>
@@ -134,7 +133,7 @@
 
 
 </section>
-<section id="about" style="min-height: 100vh;background-color: #EFEBE6;padding-top: 10vh;">
+<section style="min-height: 100vh;background-color: #EFEBE6;padding-top: 10vh;" id="domaines">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 mt-5 pe-lg-5 ps-0 pp">
@@ -407,6 +406,9 @@
 <script src="/static/javascript/splide.min.js"></script>
 <script src="/static/javascript/debounce.js"></script>
 <script>
+    function goto(str){
+        document.getElementById(str).scrollIntoView({behavior: "smooth"})
+    }
     function gotoHome() {
         closeNav()
         setTimeout(() => document.getElementById("home").scrollIntoView({behavior: "smooth"}), 600)
