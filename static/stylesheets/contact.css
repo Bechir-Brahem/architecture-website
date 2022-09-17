@@ -1,0 +1,324 @@
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p, h1, body {
+    margin: 0;
+}
+
+
+
+.content {
+    padding: 0 7%;
+    padding-top: 8vh;
+}
+
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    /*background-color: rgb(0, 0, 0); !* Black fallback color *!*/
+    background-color: #05151B;; /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    margin-top: 20vh; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.nav-image {
+    transition-property: opacity, border;
+    transition-duration: 500ms;
+    border: #E3AE7E 2px solid;
+    width: 100%;
+    height: 75vh;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+/* The navigation links inside the overlay */
+.overlay a.elts {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a.elts:hover, .overlay a.elts:focus{
+    color: #E3AE7E;
+
+}
+a.closebtn{
+    color: transparent;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    z-index: 100;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+.navbar {
+    position: fixed!important; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 19;
+}
+
+
+.hamburger {
+    height: 50px;
+    padding: 3px;
+    margin-right: 20px;
+
+}
+
+
+.cf2 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.cf2 img {
+    left: 0;
+    border: #E3AE7E 2px solid;
+    width: 100%;
+    height: 75vh;
+    max-height: 75vh;
+    min-height: 75vh;
+    max-width: 40vw;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    z-index: 0;
+    position: absolute;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.tmp {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    /* identical to box height, or 175% */
+    letter-spacing: 1.7067px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.bouton2 {
+    width: 80%;
+    height: 50px;
+    background-color: #E3AE7E;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;}
+
+.title-text-sm {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display SC, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
+.title-text-sm-l {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.content {
+    padding: 0 7%;
+    padding-top: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+p, h1 {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.more-text2 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.title-text-sm2 {
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 2px;
+    color:  #05151B;
+    text-align: left;
+
+
+}
+
+.in {
+    height: 60px;
+    border-radius: 100px;
+}
+
+.form-control {
+    padding-left: 30px;
+    color:  #05151B;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border: #E3AE7E 1px solid;;
+
+}
+
+.form-control:focus {
+    background-color: transparent !important;
+}
+
+.flex-center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold-text {
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+}
+
+hr {
+    background-color: #0000002A;
+    width: 70%;
+    height: 5px;;
+}
+
+
+.bouton {
+    width: 10vw;
+    min-width: 200px;
+    height: 50px;
+    background-color: #E3AE7E;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+
+
+}
+
+.bouton:hover {
+    background-color: #E3AE7Ef0;
+    color: black;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+
+}
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

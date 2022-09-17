@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/stylesheets/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<nav id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn">
+        <span onclick="closeNav()">
+        <span class="flex-center">
+            <span class="tmp">CLOSE</span>
+            <img src="/static/images/Close.svg" alt="">
+        </span>
+    </span>
+    </a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content container ">
+        <div id="content" class="row">
+            <div class="col-lg-6 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between">
+
+                <div id="hide2" style="height: 60vh">
+                    <div style="display: flex;flex-direction: column" id="links">
+                        <a class="abc2 elts" href="javascript:void(0)"><span class="un"
+                                                                             onclick="gotoHome()">Accueil</span></a>
+                        <a class="abc2 elts" href="javascript:void(0)"><span class="un"
+                                                                             onclick="gotoAbout()">À Propos</span></a>
+                        <a class="abc2 elts" href="javascript:void(0)"><span class="un"
+                                                                             onclick="gotoServices()">Services</span></a>
+                        <a class="abc2 elts" href="javascript:void(0)"><span class="un"
+                                                                             onclick="gotoProjects()">References</span></a>
+                        <a class="abc2 elts" href="/contact"><span class="un">Contact</span></a>
+                    </div>
+                    <div id="hide" style="height: 20vh;display: flex;flex-direction: column;justify-content: flex-end">
+                        <!--                        <div class="more-text pt-5" style="color:  #FFFFFF80;width: 50%">-->
+                        <!--                            Centre Commercial Boukhris, Rue Om Elaraeis Elmourouj 1, 2074 Tunisie-->
+                        <!--                        </div>-->
+                        <div class=" pt-5"><a href="/static/presentation.pdf" class="bouton2 flex-center"><p>Telecharger la plaquette</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 " id="degla">
+                <div class="flex-center d-none d-lg-flex cf2">
+                    <img src="/static/images/nav1.png" class="" alt="skyscraper">
+                    <img src="/static/images/nav2.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav3.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav4.png" class="" style="opacity: 0" alt="skyscraper">
+                    <img src="/static/images/nav5.png" class="" style="opacity: 0" alt="skyscraper">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</nav>
+<!--<span onclick="openNav()">open</span>-->
+
+<div class="navbar" style="color: white" >
+    <div style="display: flex;justify-content: flex-end;width: 100%;">
+        <span onclick="openNav()">MENU<img class="hamburger" src="/static/images/hamburger.png"></span>
+    </div>
+</div>
+
+<section style="background-color: #EFEBE6;padding: 20vh 0;">
+    <div class="container">
+        <div class="row">
+            <h1 class="title-text-sm2 mb-5 pb-2" style="color: #05151B;">CONTACTEZ NOUS</h1>
+            <div class="col-12 col-md-4 p-0">
+                <p class="more-text2 pb-5">
+                  Pour en savoir plus sur ce que nous pouvons faire pour vous, demander plus d’exemples de notre travail, n’hésitez pas à nous contacter.
+                </p>
+                <p class="more-text2">Appelez +33186618687, ou remplissez le formulaire à droite.</p>
+            </div>
+            <div class="col-1 d-none d-md-flex"></div>
+
+            <div class="col-12 col-md-7 mt-lg-0 mt-5 ">
+                <div class="mb-3">
+                    <input id="name" type="text" class="form-control in" placeholder="Nom et Prenom">
+                </div>
+                <div class="mb-3">
+                    <input id="subject" type="text" class="form-control in" placeholder="Objet">
+                </div>
+                <div class="mb-3">
+                    <input id="phone" type="number" class="form-control in" placeholder="Téléphone">
+                </div>
+                <div class="mb-3">
+                    <textarea id="message" class="form-control " placeholder="Votre message" rows="3"></textarea>
+                </div>
+
+                <div class="pt-5"><span onclick="sendMail()" class="bouton flex-center2">Envoyer</span></div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer style="height: 15vh; background-color: #EFEBE6;">
+    <div class="flex-center2">
+        <hr class="mt-5 he">
+    </div>
+    <div class="row">
+        <div class="col flex-center2">
+            <div class="gold-text" style="color: black; margin-top: 2px">All rights reserved</div>
+        </div>
+        <div class="col flex-center2">
+            <div class="gold-text" style="color: black; margin-top: 2px">© Copyright 2021 Company Name</div>
+
+        </div>
+        <div class="col flex-center2">
+            <div class="gold-text" style="color: black; margin-top: 2px">Produced by Company Name</div>
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+<script src="/static/javascript/debounce.js"></script>
+<script>
+    let email = "h.souguir@engineering-hs.com"
+
+    function sendMail() {
+        let name = document.getElementById("name").value
+        let phone = document.getElementById("phone").value
+        let subject = document.getElementById("subject").value
+        let message = document.getElementById("message").value
+        let body = "name is: " + name + "%0Aphone is: " + phone + "%0Amessage: " + message
+        let link = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+        window.open(link, '_blank').focus();
+    }
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    l = document.getElementsByClassName("elts")
+    navImages = document.querySelectorAll(".cf2 img")
+    changeImage = _.debounce((a) => {
+        for (let i = 0; i < navImages.length; i++) {
+            navImages[i].style.opacity = "0";
+        }
+        navImages[a].style.opacity = "1";
+        navImages[a].style.border = " #E3AE7E 2px solid";
+    }, 200);
+
+    for (let a = 0; a < l.length; a++) {
+        l[a].addEventListener("mouseenter", () => {
+            changeImage(a)
+        })
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

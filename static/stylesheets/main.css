@@ -1,0 +1,699 @@
+body {
+    background-color: #05151B;
+}
+
+
+p, h1, body {
+    margin: 0;
+}
+
+header {
+    background-image: url("/static/images/clouds2_270.webp");
+    /*background-image: url("/static/images/clouds2.mp4");*/
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#landing-building {
+    width: 100%;
+    height: 100%;
+    /*background-image:linear-gradient(rgba(5, 21, 27, 0),rgba(5, 21, 27, 1)) ,url("/static/images/building.webp");*/
+    background-image: url("/static/images/image3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+header .landing-overlay {
+    /*position: fixed; !* Sit on top of the page content *!*/
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(5, 21, 27, 0), rgba(5, 21, 27, 1)); /* Black background with opacity */
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold-text {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1.7066999673843384px;
+    text-align: center;
+    color: #E3AE7E;
+    text-transform: uppercase;
+
+}
+
+.title-text {
+    color: white;
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111px;
+    letter-spacing: 4.26669979095459px;
+    text-align: center;
+
+}
+
+header .top-section {
+    height: 5vh;
+}
+
+header .mid-section {
+    height: 60vh;
+}
+
+header .bottom-section {
+    height: 35vh;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+section .container-mid {
+    padding: 10%;
+}
+
+
+.normal-text {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod aliqua. */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+.abc2 {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display SC, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #05151BFF;
+
+
+}
+.title-text-sm {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display SC, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
+.title-text-sm-l {
+    /* Providing Unique & Priceless Experience */
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.clock {
+    height: 80vh;
+    max-width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+
+}
+
+.content {
+    padding: 0 7%;
+    padding-top: 8vh;
+}
+
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    /*background-color: rgb(0, 0, 0); !* Black fallback color *!*/
+    background-color: #EFEBE6; /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    margin-top: 20vh; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.nav-image {
+    transition-property: opacity, border;
+    transition-duration: 500ms;
+    border: #E3AE7E 2px solid;
+    width: 100%;
+    height: 75vh;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+/* The navigation links inside the overlay */
+a.elts {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+
+
+}
+
+/* When you mouse over the navigation links, change their color */
+a.elts:hover, a.elts:focus {
+    color: #E3AE7E;
+
+}
+
+a.closebtn {
+    color: transparent;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    z-index: 100;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+.navbar {
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 19;
+    padding: 0;
+
+}
+
+
+.hamburger {
+    height: 50px;
+    padding: 3px;
+    margin-right: 20px;
+
+}
+
+.side-block {
+    display: flex;
+    justify-content: space-between;
+    /*padding-top: %;*/
+    padding-bottom: 8%;
+
+}
+
+.side-text {
+    padding-left: 50px;
+    padding-top: 6%;
+
+}
+
+.side-block h1 {
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.services-title {
+
+    font-family: Playfair Display, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 70px;
+    /* identical to box height, or 137% */
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+
+
+}
+.service img{
+    height: 10vw;
+    width: 10vw;
+}
+
+.service .top-text {
+    text-align: center;
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: white;
+
+}
+
+.service ul {
+    text-align: left;
+    padding: 0 15%;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: white;
+
+}
+
+.title-text-sm2 {
+    font-family: Playfair Display SC, sans-serif;
+    color: white;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.hatem-image {
+    padding: 20px;
+    height: 50vh;
+}
+
+
+.aa img {
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 70vh;
+}
+
+.next-button {
+    margin-left: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100px;
+    width: 100px;
+    border: black 1px solid;
+    border-radius: 100px;
+    color: black;
+    transition: 100ms;
+    transition-property: color, background-color;
+}
+
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.next-text {
+    font-size: 25px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.gold-text3 {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #E3AE7E;
+    text-transform: uppercase;
+
+}
+
+.title4 {
+    color: #05151B;
+    font-family: Playfair Display, sans-serif;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.sblocks p{
+    margin-top: 1vh;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size:1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.uwu2{
+    height: 30%;
+}
+.sblocks li{
+    color: white;
+    margin-top: 1vh;
+    font-family: Roboto, sans-serif;
+    font-size:1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.uwu-text4 {
+    color: #05151B;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.popi{
+    border: #05151B 1px solid;
+}
+.more-text4 {
+    color: #05151B;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 40%;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .more-text4 {
+        width: 70%;
+
+    }
+}
+
+
+.text-footer {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFFB2;
+    width: 40%;
+
+}
+
+.columns {
+    flex-direction: column;
+}
+
+.bouton {
+    width: 20vw;
+    min-width: 200px;
+    background-color: #E3AE7E;
+    color: black;
+    padding: 15px 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+
+}
+
+.bouton:hover {
+    background-color: #E3AE7Ef0;
+    color: black;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+
+}
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.specific {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border: #E3AE7E 1px solid;
+    border-radius: 100px;
+
+}
+
+.bouton2 {
+    width: 80%;
+    height: 50px;
+    background-color: #E3AE7E;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+
+
+}
+
+
+.cf {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.cf img {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+    opacity: 0;
+}
+
+.blocks {
+    z-index: 10;
+    margin-top: 15vh;
+    height: 70vh;
+    padding: 0 2vw;
+    font-family: Playfair Display SC, sans-serif;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition-property: padding;
+    transition-duration: 500ms;
+}
+
+.blocks:hover {
+    padding: 5vh 4vw;
+}
+
+.digits {
+    font-family: Playfair Display SC, sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #FFFFFF26;
+
+
+}
+
+.sblocks {
+    background-color: #0d2c38;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px #0d2c38 solid;
+    transition-property: border-bottom-color;
+    transition-duration: 500ms;
+
+}
+.sblocks img{
+    width: 100px;
+    height: 100px;
+}
+
+.sblocks:hover {
+    border-bottom: 2px #E3AE7E solid;
+}
+
+.arrow {
+    height: 15vh;
+}
+
+.sm-big {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* or 150% */
+
+    color: #05151B;
+
+}
+
+.cf2 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.splide__slide img {
+    height: 70vh!important;
+    width: 70vw;
+}
+.cf2 img {
+    left: 0;
+    border: #E3AE7E 2px solid;
+    width: 100%;
+    height: 75vh;
+    max-height: 75vh;
+    min-height: 75vh;
+    max-width: 40vw;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    z-index: 0;
+    position: absolute;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.tmp {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    /* identical to box height, or 175% */
+    letter-spacing: 1.7067px;
+    text-transform: uppercase;
+
+    color: black;
+}
